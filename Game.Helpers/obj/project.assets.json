@@ -671,11 +671,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\hasanoz\\source\\repos\\GameServer\\Game.Helpers\\Game.Helpers.csproj",
+      "projectUniqueName": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\Game.Helpers\\Game.Helpers.csproj",
       "projectName": "Game.Helpers",
-      "projectPath": "c:\\users\\hasanoz\\source\\repos\\GameServer\\Game.Helpers\\Game.Helpers.csproj",
+      "projectPath": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\Game.Helpers\\Game.Helpers.csproj",
       "packagesPath": "C:\\Users\\HASANOZ\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\hasanoz\\source\\repos\\GameServer\\Game.Helpers\\obj\\",
+      "outputPath": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\Game.Helpers\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",

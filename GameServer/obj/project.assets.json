@@ -703,11 +703,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\hasanoz\\source\\repos\\GameServer\\GameServer\\GameServer.csproj",
+      "projectUniqueName": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\GameServer\\GameServer.csproj",
       "projectName": "GameServer",
-      "projectPath": "c:\\users\\hasanoz\\source\\repos\\GameServer\\GameServer\\GameServer.csproj",
+      "projectPath": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\GameServer\\GameServer.csproj",
       "packagesPath": "C:\\Users\\HASANOZ\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\hasanoz\\source\\repos\\GameServer\\GameServer\\obj\\",
+      "outputPath": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\GameServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -728,11 +728,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "c:\\users\\hasanoz\\source\\repos\\GameServer\\ClassContainer\\ClassContainer.csproj": {
-              "projectPath": "c:\\users\\hasanoz\\source\\repos\\GameServer\\ClassContainer\\ClassContainer.csproj"
+            "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\ClassContainer\\ClassContainer.csproj": {
+              "projectPath": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\ClassContainer\\ClassContainer.csproj"
             },
-            "c:\\users\\hasanoz\\source\\repos\\GameServer\\Game.Helpers\\Game.Helpers.csproj": {
-              "projectPath": "c:\\users\\hasanoz\\source\\repos\\GameServer\\Game.Helpers\\Game.Helpers.csproj"
+            "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\Game.Helpers\\Game.Helpers.csproj": {
+              "projectPath": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\Game.Helpers\\Game.Helpers.csproj"
             }
           }
         }
