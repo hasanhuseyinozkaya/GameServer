@@ -1,0 +1,11 @@
+c:\users\hasanoz\source\repos\GameServer\ClientTest\obj\Debug\netcoreapp2.0\ClientTest.csprojResolveAssemblyReference.cache
+c:\users\hasanoz\source\repos\GameServer\ClientTest\obj\Debug\netcoreapp2.0\ClientTest.csproj.CoreCompileInputs.cache
+c:\users\hasanoz\source\repos\GameServer\ClientTest\obj\Debug\netcoreapp2.0\ClientTest.AssemblyInfoInputs.cache
+c:\users\hasanoz\source\repos\GameServer\ClientTest\obj\Debug\netcoreapp2.0\ClientTest.AssemblyInfo.cs
+c:\users\hasanoz\source\repos\GameServer\ClientTest\bin\Debug\netcoreapp2.0\ClientTest.deps.json
+c:\users\hasanoz\source\repos\GameServer\ClientTest\bin\Debug\netcoreapp2.0\ClientTest.runtimeconfig.json
+c:\users\hasanoz\source\repos\GameServer\ClientTest\bin\Debug\netcoreapp2.0\ClientTest.runtimeconfig.dev.json
+c:\users\hasanoz\source\repos\GameServer\ClientTest\bin\Debug\netcoreapp2.0\ClientTest.dll
+c:\users\hasanoz\source\repos\GameServer\ClientTest\bin\Debug\netcoreapp2.0\ClientTest.pdb
+c:\users\hasanoz\source\repos\GameServer\ClientTest\obj\Debug\netcoreapp2.0\ClientTest.dll
+c:\users\hasanoz\source\repos\GameServer\ClientTest\obj\Debug\netcoreapp2.0\ClientTest.pdb

@@ -1,0 +1,8 @@
+c:\users\hasanoz\source\repos\GameServer\ClassContainer\bin\Debug\netcoreapp2.0\ClassContainer.deps.json
+c:\users\hasanoz\source\repos\GameServer\ClassContainer\bin\Debug\netcoreapp2.0\ClassContainer.dll
+c:\users\hasanoz\source\repos\GameServer\ClassContainer\bin\Debug\netcoreapp2.0\ClassContainer.pdb
+c:\users\hasanoz\source\repos\GameServer\ClassContainer\obj\Debug\netcoreapp2.0\ClassContainer.csproj.CoreCompileInputs.cache
+c:\users\hasanoz\source\repos\GameServer\ClassContainer\obj\Debug\netcoreapp2.0\ClassContainer.AssemblyInfoInputs.cache
+c:\users\hasanoz\source\repos\GameServer\ClassContainer\obj\Debug\netcoreapp2.0\ClassContainer.AssemblyInfo.cs
+c:\users\hasanoz\source\repos\GameServer\ClassContainer\obj\Debug\netcoreapp2.0\ClassContainer.dll
+c:\users\hasanoz\source\repos\GameServer\ClassContainer\obj\Debug\netcoreapp2.0\ClassContainer.pdb
