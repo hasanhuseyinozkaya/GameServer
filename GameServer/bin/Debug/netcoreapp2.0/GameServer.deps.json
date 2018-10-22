@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v2.0": {
       "GameServer/1.0.0": {
         "dependencies": {
-          "ClassContainer": "1.0.0"
+          "ClassContainer": "1.0.0",
+          "Game.Helpers": "1.0.0"
         },
         "runtime": {
           "GameServer.dll": {}
@@ -17,6 +18,11 @@
       "ClassContainer/1.0.0": {
         "runtime": {
           "ClassContainer.dll": {}
+        }
+      },
+      "Game.Helpers/1.0.0": {
+        "runtime": {
+          "Game.Helpers.dll": {}
         }
       }
     }
@@ -28,6 +34,11 @@
       "sha512": ""
     },
     "ClassContainer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Game.Helpers/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

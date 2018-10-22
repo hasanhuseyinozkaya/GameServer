@@ -1,0 +1,9 @@
+C:\Users\HASANOZ\source\repos\GameServer\Game.Helpers\bin\Debug\netcoreapp2.0\Game.Helpers.deps.json
+C:\Users\HASANOZ\source\repos\GameServer\Game.Helpers\bin\Debug\netcoreapp2.0\Game.Helpers.dll
+C:\Users\HASANOZ\source\repos\GameServer\Game.Helpers\bin\Debug\netcoreapp2.0\Game.Helpers.pdb
+C:\Users\HASANOZ\source\repos\GameServer\Game.Helpers\obj\Debug\netcoreapp2.0\Game.Helpers.csprojResolveAssemblyReference.cache
+C:\Users\HASANOZ\source\repos\GameServer\Game.Helpers\obj\Debug\netcoreapp2.0\Game.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\HASANOZ\source\repos\GameServer\Game.Helpers\obj\Debug\netcoreapp2.0\Game.Helpers.AssemblyInfoInputs.cache
+C:\Users\HASANOZ\source\repos\GameServer\Game.Helpers\obj\Debug\netcoreapp2.0\Game.Helpers.AssemblyInfo.cs
+C:\Users\HASANOZ\source\repos\GameServer\Game.Helpers\obj\Debug\netcoreapp2.0\Game.Helpers.dll
+C:\Users\HASANOZ\source\repos\GameServer\Game.Helpers\obj\Debug\netcoreapp2.0\Game.Helpers.pdb

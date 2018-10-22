@@ -110,7 +110,30 @@ public class AsynchronousSocketListener
         StateObject state = new StateObject();
         state.workSocket = handler;
 
- 
+        //SeriObj send = (SeriObj)GameObjectDeSerializer.ByteArrayToObject(state.buffer);
+        //Console.WriteLine(send.UserName + " Connected To Server");
+
+        //     ConnectionPool connectionPool = new ConnectionPool();
+        //connectionPool.State = state;
+        //connectionPool.Handler = handler;
+        //connectionPool.UserName = send.UserName;
+
+
+        
+        //var isUserAlreadyConnected = AsynchronousSocketListener.connectionPoolIns.Find(t => t.UserName == send.UserName);
+        //if (isUserAlreadyConnected != null)
+        //    AsynchronousSocketListener.connectionPoolIns.Remove(isUserAlreadyConnected);
+
+        //AsynchronousSocketListener.connectionPoolIns.Add(connectionPool);
+        //Console.WriteLine("Total Connection Count " + AsynchronousSocketListener.connectionPoolIns.Count);
+
+        //for (int i = 0; i < AsynchronousSocketListener.connectionPoolIns.Count; i++)
+        //{
+        //    var connectedUsers = AsynchronousSocketListener.connectionPoolIns[i];
+        //    Send(connectedUsers.Handler, send.UserName + " Connected To Server", connectedUsers.UserName);
+
+       // } 
+
 
         handler.BeginReceive(state.buffer, 0, StateObject.BufferSize, 0,
             new AsyncCallback(ReadCallback), state);
@@ -131,26 +154,7 @@ public class AsynchronousSocketListener
         SeriObj send = (SeriObj)GameObjectDeSerializer.ByteArrayToObject(state.buffer);
 
 
-        ConnectionPool connectionPool = new ConnectionPool();
-        connectionPool.State = state;
-        connectionPool.Handler = handler;
-        connectionPool.UserName = send.UserName;
-
-
-        Console.WriteLine(send.UserName + " Connected To Server");
-        var isUserAlreadyConnected = AsynchronousSocketListener.connectionPoolIns.Find(t => t.UserName == send.UserName);
-        if (isUserAlreadyConnected != null)
-            AsynchronousSocketListener.connectionPoolIns.Remove(isUserAlreadyConnected);
-
-        AsynchronousSocketListener.connectionPoolIns.Add(connectionPool);
-        Console.WriteLine("Total Connection Count " + AsynchronousSocketListener.connectionPoolIns.Count);
-
-        for (int i = 0; i < AsynchronousSocketListener.connectionPoolIns.Count; i++)
-        {
-            var connectedUsers = AsynchronousSocketListener.connectionPoolIns[i];
-            Send(connectedUsers.Handler, send.UserName + " Connected To Server", connectedUsers.UserName);
-
-        } 
+   
 
         if (bytesRead > 0)
         {
@@ -173,8 +177,8 @@ public class AsynchronousSocketListener
             //else
             //{
             //    // Not all data received. Get more.  
-            //    handler.BeginReceive(state.buffer, 0, StateObject.BufferSize, 0,
-            //    new AsyncCallback(ReadCallback), state);
+                handler.BeginReceive(state.buffer, 0, StateObject.BufferSize, 0,
+                new AsyncCallback(ReadCallback), state);
             //}
         }
     }
