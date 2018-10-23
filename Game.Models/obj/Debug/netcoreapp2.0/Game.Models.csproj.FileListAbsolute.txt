@@ -1,0 +1,9 @@
+C:\Users\HASANOZ\source\repos\GameServer\Game.Models\bin\Debug\netcoreapp2.0\Game.Models.deps.json
+C:\Users\HASANOZ\source\repos\GameServer\Game.Models\bin\Debug\netcoreapp2.0\Game.Models.dll
+C:\Users\HASANOZ\source\repos\GameServer\Game.Models\bin\Debug\netcoreapp2.0\Game.Models.pdb
+C:\Users\HASANOZ\source\repos\GameServer\Game.Models\obj\Debug\netcoreapp2.0\Game.Models.csproj.CoreCompileInputs.cache
+C:\Users\HASANOZ\source\repos\GameServer\Game.Models\obj\Debug\netcoreapp2.0\Game.Models.AssemblyInfoInputs.cache
+C:\Users\HASANOZ\source\repos\GameServer\Game.Models\obj\Debug\netcoreapp2.0\Game.Models.AssemblyInfo.cs
+C:\Users\HASANOZ\source\repos\GameServer\Game.Models\obj\Debug\netcoreapp2.0\Game.Models.dll
+C:\Users\HASANOZ\source\repos\GameServer\Game.Models\obj\Debug\netcoreapp2.0\Game.Models.pdb
+C:\Users\HASANOZ\source\repos\GameServer\Game.Models\obj\Debug\netcoreapp2.0\Game.Models.csprojResolveAssemblyReference.cache

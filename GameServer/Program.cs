@@ -9,10 +9,10 @@ using System.Threading;
 using ClassContainer;
 using System.Data;
 using Game.Helpers;
-
+using Game.Models;
 // State object for reading client data asynchronously  
 
-    
+
 public class StateObject
 {
     // Client  socket.  
@@ -43,7 +43,7 @@ public class SendMeToTheServer
 public class AsynchronousSocketListener
 {
 
-   public static  List<ConnectionPool> connectionPoolIns = new List<ConnectionPool>();
+    public static List<ConnectionPool> connectionPoolIns = new List<ConnectionPool>();
     // Thread signal.  
     public static ManualResetEvent allDone = new ManualResetEvent(false);
 
@@ -95,7 +95,7 @@ public class AsynchronousSocketListener
         Console.Read();
 
     }
-     
+
     public static void AcceptCallback(IAsyncResult ar)
     {
         Console.WriteLine("Connection Made");
@@ -105,7 +105,7 @@ public class AsynchronousSocketListener
         // Get the socket that handles the client request.  
         Socket listener = (Socket)ar.AsyncState;
         Socket handler = listener.EndAccept(ar);
-        
+
         // Create the state object.  
         StateObject state = new StateObject();
         state.workSocket = handler;
@@ -119,7 +119,7 @@ public class AsynchronousSocketListener
         //connectionPool.UserName = send.UserName;
 
 
-        
+
         //var isUserAlreadyConnected = AsynchronousSocketListener.connectionPoolIns.Find(t => t.UserName == send.UserName);
         //if (isUserAlreadyConnected != null)
         //    AsynchronousSocketListener.connectionPoolIns.Remove(isUserAlreadyConnected);
@@ -132,7 +132,7 @@ public class AsynchronousSocketListener
         //    var connectedUsers = AsynchronousSocketListener.connectionPoolIns[i];
         //    Send(connectedUsers.Handler, send.UserName + " Connected To Server", connectedUsers.UserName);
 
-       // } 
+        // } 
 
 
         handler.BeginReceive(state.buffer, 0, StateObject.BufferSize, 0,
@@ -151,10 +151,46 @@ public class AsynchronousSocketListener
         // Read data from the client socket.   
         int bytesRead = handler.EndReceive(ar);
 
-        SeriObj send = (SeriObj)GameObjectDeSerializer.ByteArrayToObject(state.buffer);
+        var send = (ModelEnumeration)GameObjectDeSerializer.ByteArrayToObject(state.buffer);
+
+        switch (send.ModelType)
+        {
+            case ModelTypes.Login:
+                Login lglgl = (Login)send.Model;
+                Console.WriteLine(lglgl.Username + " Connected To Server");
+
+                ConnectionPool connectionPool = new ConnectionPool();
+                connectionPool.State = state;
+                connectionPool.Handler = handler;
+                connectionPool.UserName = lglgl.Username;
 
 
-   
+
+                var isUserAlreadyConnected = AsynchronousSocketListener.connectionPoolIns.Find(t => t.UserName == lglgl.Username);
+                if (isUserAlreadyConnected != null)
+                    AsynchronousSocketListener.connectionPoolIns.Remove(isUserAlreadyConnected);
+
+                AsynchronousSocketListener.connectionPoolIns.Add(connectionPool);
+                Console.WriteLine("Total Connection Count " + AsynchronousSocketListener.connectionPoolIns.Count);
+
+                for (int i = 0; i < AsynchronousSocketListener.connectionPoolIns.Count; i++)
+                {
+                    var connectedUsers = AsynchronousSocketListener.connectionPoolIns[i];
+                    Send(connectedUsers.Handler, lglgl.Username + " Connected To Server", connectedUsers.UserName);
+
+                }
+                break;
+            default:
+                break;
+        }
+
+
+     
+
+
+
+
+
 
         if (bytesRead > 0)
         {
@@ -167,36 +203,36 @@ public class AsynchronousSocketListener
             content = state.sb.ToString();
             //if (content.IndexOf("<EOF>") > -1)
             //{
-                // All the data has been read from the   
-                // client. Display it on the console.  
-                //Console.WriteLine("Read {0} bytes from socket. \n Data : {1}",
-                //    content.Length, content);
-                // Echo the data back to the client.  
-              //  Send(handler, "received");
+            // All the data has been read from the   
+            // client. Display it on the console.  
+            //Console.WriteLine("Read {0} bytes from socket. \n Data : {1}",
+            //    content.Length, content);
+            // Echo the data back to the client.  
+            //  Send(handler, "received");
             //}
             //else
             //{
             //    // Not all data received. Get more.  
-                handler.BeginReceive(state.buffer, 0, StateObject.BufferSize, 0,
-                new AsyncCallback(ReadCallback), state);
+            handler.BeginReceive(state.buffer, 0, StateObject.BufferSize, 0,
+            new AsyncCallback(ReadCallback), state);
             //}
         }
     }
 
-    private static void Send(Socket handler, String data,string username)
+    private static void Send(Socket handler, String data, string username)
     {
         // Convert the string data to byte data using ASCII encoding.  
         byte[] byteData = Encoding.ASCII.GetBytes(data);
 
         // Begin sending the data to the remote device.  
         Console.WriteLine(handler.Connected);
-        if(SocketConnected(handler))
+        if (SocketConnected(handler))
         {
             handler.BeginSend(byteData, 0, byteData.Length, 0,
             new AsyncCallback(SendCallback), handler);
         }
     }
-   static bool SocketConnected(Socket s)
+    static bool SocketConnected(Socket s)
     {
         bool part1 = s.Poll(1000, SelectMode.SelectRead);
         bool part2 = (s.Available == 0);
@@ -216,8 +252,8 @@ public class AsynchronousSocketListener
             int bytesSent = handler.EndSend(ar);
             Console.WriteLine("Sent {0} bytes to client.", bytesSent);
 
-         //   handler.Shutdown(SocketShutdown.Both);
-          //  handler.Close();
+            //   handler.Shutdown(SocketShutdown.Both);
+            //  handler.Close();
 
         }
         catch (Exception e)

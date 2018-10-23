@@ -14,3 +14,5 @@ C:\Users\HASANOZ\source\repos\GameServer\GameServer\obj\Debug\netcoreapp2.0\Game
 C:\Users\HASANOZ\source\repos\GameServer\GameServer\obj\Debug\netcoreapp2.0\GameServer.csproj.CopyComplete
 C:\Users\HASANOZ\source\repos\GameServer\GameServer\obj\Debug\netcoreapp2.0\GameServer.dll
 C:\Users\HASANOZ\source\repos\GameServer\GameServer\obj\Debug\netcoreapp2.0\GameServer.pdb
+C:\Users\HASANOZ\source\repos\GameServer\GameServer\bin\Debug\netcoreapp2.0\Game.Models.dll
+C:\Users\HASANOZ\source\repos\GameServer\GameServer\bin\Debug\netcoreapp2.0\Game.Models.pdb

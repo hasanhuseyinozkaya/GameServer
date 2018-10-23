@@ -196,36 +196,6 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "ClassContainer/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "compile": {
-          "bin/placeholder/ClassContainer.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ClassContainer.dll": {}
-        }
-      },
-      "Game.Helpers/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "compile": {
-          "bin/placeholder/Game.Helpers.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Game.Helpers.dll": {}
-        }
-      },
-      "Game.Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "compile": {
-          "bin/placeholder/Game.Models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Game.Models.dll": {}
-        }
       }
     }
   },
@@ -686,28 +656,10 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "ClassContainer/1.0.0": {
-      "type": "project",
-      "path": "../ClassContainer/ClassContainer.csproj",
-      "msbuildProject": "../ClassContainer/ClassContainer.csproj"
-    },
-    "Game.Helpers/1.0.0": {
-      "type": "project",
-      "path": "../Game.Helpers/Game.Helpers.csproj",
-      "msbuildProject": "../Game.Helpers/Game.Helpers.csproj"
-    },
-    "Game.Models/1.0.0": {
-      "type": "project",
-      "path": "../Game.Models/Game.Models.csproj",
-      "msbuildProject": "../Game.Models/Game.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "ClassContainer >= 1.0.0",
-      "Game.Helpers >= 1.0.0",
-      "Game.Models >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -719,11 +671,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\GameServer\\GameServer.csproj",
-      "projectName": "GameServer",
-      "projectPath": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\GameServer\\GameServer.csproj",
+      "projectUniqueName": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\Game.Models\\Game.Models.csproj",
+      "projectName": "Game.Models",
+      "projectPath": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\Game.Models\\Game.Models.csproj",
       "packagesPath": "C:\\Users\\HASANOZ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\GameServer\\obj\\",
+      "outputPath": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\Game.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -743,17 +695,7 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {
-            "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\ClassContainer\\ClassContainer.csproj": {
-              "projectPath": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\ClassContainer\\ClassContainer.csproj"
-            },
-            "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\Game.Helpers\\Game.Helpers.csproj": {
-              "projectPath": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\Game.Helpers\\Game.Helpers.csproj"
-            },
-            "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\Game.Models\\Game.Models.csproj": {
-              "projectPath": "C:\\Users\\HASANOZ\\source\\repos\\GameServer\\Game.Models\\Game.Models.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -766,6 +708,7 @@
       "netcoreapp2.0": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true

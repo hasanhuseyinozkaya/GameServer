@@ -8,6 +8,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ClassContainer\ClassContainer.csproj" />
     <ProjectReference Include="..\Game.Helpers\Game.Helpers.csproj" />
+    <ProjectReference Include="..\Game.Models\Game.Models.csproj" />
   </ItemGroup>
 
 </Project>
